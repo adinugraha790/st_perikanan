@@ -3,26 +3,46 @@ import streamlit.components.v1 as components
 import numpy as np
 import pandas as pd
 
-st.set_page_config(page_title= "", page_icon='icon.jpg',layout="wide")
+st.set_page_config(page_title= "Kontribusi Provinsi terhadap Produksi Perikanan", page_icon='icon.jpg',layout="wide")
 
 st.sidebar.subheader('Analisis Produksi Perikanan Indonesia dan Potensi IoTnya')
 st.sidebar.markdown(f"""
                    Analisis dilakukan berdasarkan data pada **[Statistik Kementerian Kelautan dan Perikanan (KKP)](https://statistik.kkp.go.id/)** dan **[Badan Pusat Statistik (BPS)](https://www.bps.go.id/)**.
                    """)
 
-st.title("")
+st.title("Kontribusi Provinsi terhadap Produksi Perikanan")
 
-html_temp = """"""
+
+st.caption('')
+
+st.subheader("Kontribusi Provinsi terhadap Produksi Perikanan Tangkap & Akuakultur")
+tab1, tab2, tab3, tab4 = st.tabs(['2000-2005', '2006-2010', '2011-2015', '2016-2020'])
+
+html_temp = """<div class='tableauPlaceholder' id='viz1659566839173' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3_&#47;3_2VolumeProduksiPerikananBudidaya&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='3_2VolumeProduksiPerikananBudidaya&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3_&#47;3_2VolumeProduksiPerikananBudidaya&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1659566839173');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
 components.html(html_temp, width=1200, height=900)
 
-st.caption('Ini caption dashboard')
+with tab1:
+    html_temp = """<div class='tableauPlaceholder' id='viz1659566259184' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2_&#47;2_1KontribusiProvinsithdProduksiPerikanan&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='2_1KontribusiProvinsithdProduksiPerikanan&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2_&#47;2_1KontribusiProvinsithdProduksiPerikanan&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1659566259184');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
+    components.html(html_temp, width=1200, height=900)
+with tab2:
+    html_temp = """<div class='tableauPlaceholder' id='viz1659566527357' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2_&#47;2_1KontribusiProvinsithdProduksiPerikanan_2&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='2_1KontribusiProvinsithdProduksiPerikanan_2&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2_&#47;2_1KontribusiProvinsithdProduksiPerikanan_2&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1659566527357');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
+    components.html(html_temp, width=1200, height=900)
+with tab3:
+    html_temp = """<div class='tableauPlaceholder' id='viz1659566579498' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2_&#47;2_1KontribusiProvinsithdProduksiPerikanan_3&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='2_1KontribusiProvinsithdProduksiPerikanan_3&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2_&#47;2_1KontribusiProvinsithdProduksiPerikanan_3&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1659566579498');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
+    components.html(html_temp, width=1200, height=900)
+with tab4:
+    html_temp = """<div class='tableauPlaceholder' id='viz1659566634242' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2_&#47;2_1KontribusiProvinsithdProduksiPerikanan_4&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='2_1KontribusiProvinsithdProduksiPerikanan_4&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2_&#47;2_1KontribusiProvinsithdProduksiPerikanan_4&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1659566634242');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
+    components.html(html_temp, width=1200, height=900)
 
-st.header("")
+html_temp = """<div class='tableauPlaceholder' id='viz1659567121499' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3_&#47;3_3VolumeProduksiPerikananTangkap&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='3_3VolumeProduksiPerikananTangkap&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3_&#47;3_3VolumeProduksiPerikananTangkap&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1659567121499');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
+components.html(html_temp, width=1200, height=900)
+
 with st.expander("Lihat wawasan penting", expanded=True):
     st.markdown("""**Wawasan penting**""")
-    lst = ['a', 
-        'b', 
-        'c']
+    lst = ['Sulawesi Selatan adalah provinsi dengan kontribusi terbanyak terhadap total produksi perikanan, khususnya pada komoditas rumput laut', 
+        'Pada produksi perikanan budidaya darat, empat provinsi yang berkontribusi besar adalah Jawa Barat, Jawa Tengah, Jawa Timur, dan Sumatera Selatan', 
+        'Untuk produksi perikanan tangkap laut, tiga provinsi yang berkontribusi besar adalah Maluku, Jawa Timur, dan Sumatera Utara',
+        'Untuk produksi perikanan tangkap darat, dua provinsi yang berkontribusi besar adalah Provinsi Sumatera Selatan dan Kalimantan Selatan']
 
     s = ''
 
@@ -31,16 +51,19 @@ with st.expander("Lihat wawasan penting", expanded=True):
 
     st.markdown(s)
 
-with st.container():
-    st.markdown("""_________________""")
 
+with st.container():
+    st.markdown("""Pertumbuhan total produksi perikanan tersebut akan bervariasi ketika dilihat kontribusi masing-masing provinsi. Sulawesi Selatan menjadi provinsi dengan kontribusi terbanyak kedua dalam rataan total produksi perikanan pada rentang tahun 2000-2005. Pada periode 2006-2010, 2011-2015, dan 2016-2020 produksi perikanan budidaya darat dan khususnya laut mengalami peningkatan yang sangat tajam, meskipun perikanan tangkap laut dan daratnya mengalami stagnasi atau penurunan. Rataan produksi perikanan budidaya laut dan darat masing-masing pada 2000-2005 adalah 36.925 ton dan 123.371 ton, sedangkan pada 2016-2020 adalah 2.436.525 ton dan 1.242.000 ton. Ini menandakan perkembangan yang sangat pesat bagi industri perikanan budidaya laut dan darat di Provinsi Sulawesi Selatan selama dua dekade ini. Salah satu komoditas yang menjadi unggulan provinsi ini adalah rumput laut, yang katanya menjadi pemasok 18% produksi rumput laut merah global . Beberapa provinsi lain yang mengalami peningkatan pesat pada produksi perikanan budidaya laut dua dekade ini adalah Nusa Tenggara Timur, Sulawesi Tengah, Sulawesi Tenggara, Nusa Tenggara Barat, Maluku, dan Jawa Timur.""")
+    st.markdown("Pada produksi perikanan budidaya darat, empat provinsi yang berkontribusi besar selama dua dekade itu adalah Provinsi Jawa Barat, Jawa Tengah, Jawa Timur, dan Sumatera Selatan dengan masing-masing kuantitas 985.429 ton, 409.245 ton, 558.643 ton, dan 377.598 ton untuk rataan produksi perikanan budidaya darat 2016-2020. Pada kedua dekade tersebut, produksi perikanan budidaya darat di Jawa Barat dan Jawa Tengah meningkat hampir 5 kali lipat, Jawa Timur meningkat hampir 4 kali lipat, dan Sumatera Selatan meningkat sekitar 10 kali lipat.")
+    st.markdown('Sementara itu, untuk produksi perikanan tangkap laut, ketiga provinsi yang berkontribusi besar adalah Maluku, Jawa Timur, dan Sumatera Utara dengan masing-masing kuantitas 545.048 ton, 461.543 ton dan 637.535 ton untuk rataan produksi perikanan tangkap laut 2016-2020. Peningkatan produksi perikanan tangkap laut pada keempat periode tersebut adalah 1.6 kali lipat, 1.35 kali lipat, dan 1.9 kali lipat untuk masing-masing Maluku, Jawa Timur, dan Sumatera Utara.')
+    st.markdown('Pada produksi perikanan tangkap darat, Provinsi Sumatera Selatan dan Kalimantan Selatan merupakan kedua provinsi dengan kontribusi tertinggi dengan masing-masing kuantitas 99.087 ton dan 60.083 ton untuk rataan produksi perikanan tangkap darat 2016-2020. Peningkatan produksi perikanan tangkap darat selama 2 dekade tersebut adalah sekitar 2 kali lipat dan 10% untuk masing-masing Provinsi Sumatera Selatan dan Kalimantan Selatan.')
 
 # Akhir page
 with st.expander("Referensi", expanded=False):
-    st.markdown("**Data:**")
-    lst = ['a', 
-        'b', 
-        'c']
+    st.markdown("**Literatur:**")
+    lst = ['Seaweed Nation: Indonesia’s new growth sector | PAIR (australiaindonesiacentre.org)', 
+        'Profil Komoditas Ikan Bandeng | Warta Pasar Ikan (kkp.go.id)', 
+        ]
 
     s = ''
 
@@ -49,23 +72,12 @@ with st.expander("Referensi", expanded=False):
 
     st.markdown(s)
 
-    st.markdown("**Lainnya:**")
-    lst = ['a', 
-            'b', 
-            'c']
-
-    s = ''
-
-    for i in lst:
-        s += "- " + i + "\n"
-
-    st.markdown(s)
 
 with st.expander("Metode dan/atau Kode", expanded=False):
     st.markdown("**Metode:**")
-    lst = ['a', 
-        'b', 
-        'c']
+    lst = ['Modifikasi data dilakukan dengan Microsoft Excel', 
+        'Visualisasi data dilakukan dengan Tableau', 
+        ]
 
     s = ''
 
