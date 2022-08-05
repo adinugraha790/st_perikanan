@@ -47,7 +47,8 @@ st.markdown('Berdasarkan pengalaman pribadi penulis berinteraksi dengan beberapa
 st.markdown('Untuk pasar IoT Indonesia sektor perikanan tangkap, potensinya penulis perkirakan sangat besar untuk sektor perikanan tangkap laut. Kesimpulan tersebut didapat karena selain jumlah perahu yang sangat tinggi dibandingkan dengan jumlah perahu tangkap PUD, produksinya juga tinggi sehingga jika nilai dari produksi tersebut minimal setara atau tinggi, maka penghasilan yang didapat nelayan laut lebih tinggi. Ini berarti kemampuan nelayan laut dalam membeli produk lebih besar dibanding nelayan PUD. Penghitungan biaya operasional memerlukan AI predictive maintenance, McKinsey mengatakan bahwa jika perusahaan perikanan skala besar di dunia menggunakan model tersebut, biaya operasi tahunan dapat berkurang hingga 11 milyar dolar AS.')
 
 st.markdown('Di bawah ini adalah rekomendasi yang dapat penulis berikan untuk pasar IoT di Indonesia, dengan berbagai parameter dan target pasar serta provinsi yang dapat dijadikan prioritas utama dalam pemasaran produk IoTnya.')
-
+rekomen = pd.read_csv('Rekomendasi.csv')
+st.dataframe(rekomen)
 
 # Akhir page
 with st.expander("Referensi", expanded=False):
