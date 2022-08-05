@@ -48,7 +48,7 @@ st.markdown('Untuk pasar IoT Indonesia sektor perikanan tangkap, potensinya penu
 
 st.markdown('Di bawah ini adalah rekomendasi yang dapat penulis berikan untuk pasar IoT di Indonesia, dengan berbagai parameter dan target pasar serta provinsi yang dapat dijadikan prioritas utama dalam pemasaran produk IoTnya.')
 rekomen = pd.read_excel('Rekomendasi.xlsx')
-rekomen
+st.dataframe(rekomen)
 
 # Akhir page
 with st.expander("Referensi", expanded=False):
